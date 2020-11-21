@@ -1,1 +1,4 @@
-<p>uploader works!</p>
+<input type='file' (change)="readURL($event);" />
+<img id="blah" height="200px" width="auto" [src]="imageSrc || 'http://placehold.it/180'" alt="your image" />
+<button (click)="upload()">upload</button>
+
